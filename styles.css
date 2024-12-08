@@ -1,0 +1,134 @@
+/* Genel Ayarlar */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff5cc;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #e67e22;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Menü */
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0;
+    padding: 0;
+    background-color: #d35400;
+    border-radius: 8px;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #e67e22;
+}
+
+.navbar .active {
+    color: #e67e22;
+    font-weight: bold;
+    background-color: #f9c66b;
+}
+
+/* Bağlantı Butonları */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.buttons-container .btn {
+    padding: 15px 30px;
+    text-decoration: none;
+    color: white;
+    background-color: #d35400;
+    font-size: 1.2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.buttons-container .btn:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+}
+
+/* Kartlar */
+.info-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.info-box {
+    background-color: #fff7e6;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.2s;
+}
+
+.info-box img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+    background-color: #ffe4b5;
+}
+
+/* Oyunlar */
+.games-section {
+    margin: 40px 0;
+}
+
+.games-section h2 {
+    font-size: 2em;
+    color: #e67e22;
+    margin-bottom: 20px;
+}
+
+.games-section .btn {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #d35400;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.games-section .btn:hover {
+    background-color: #e67e22;
+}
