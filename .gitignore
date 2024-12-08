@@ -1,7 +1,6 @@
 # This .gitignore file should be placed at the root of your Unity project directory
-#
-# Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
-#
+
+# Unity generated directories and files
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
@@ -16,6 +15,9 @@
 
 # Recordings can get excessive in size
 /[Rr]ecordings/
+
+# Asset meta data should only be ignored when the corresponding asset is also ignored
+!/[Aa]ssets//*.meta
 
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # /[Aa]ssets/AssetStoreTools*
@@ -65,8 +67,68 @@ sysinfo.txt
 crashlytics-build.properties
 
 # Packed Addressables
-/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata//.bin*
 
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# macOS specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows specific files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+
+# Visual Studio Code specific files
+.vscode/
+
+# Rider specific files
+.idea/
+
+# Unity specific files to ignore
+*.cginc.meta
+*.hlsl.meta
+*.shadergraph.meta
+*.compute.meta
+
+# Unity test tools
+/[Aa]ssets/[Tt]est[Tt]ools*
+
+# Unity asset store
+/[Aa]ssets/[Aa]sset[Ss]tore*
+
+# Unity Collab
+/[Aa]ssets/Plugins/PlasticSCM*
+
+# Unity Package Manager
+/[Pp]ackages/
+
+# Exclude package-lock.json as it's usually not needed in version control
+/package-lock.json
+
+# Exclude Unity generated lighting data
+/[Aa]ssets/[Ss]cenes//[Ll]ightingData.asset
+/[Aa]ssets/[Ss]cenes//[Ll]ightingData.asset.meta
+
+# Exclude NavMesh files
+**/NavMesh.asset
+*/NavMesh-.asset
+
+# Exclude profiler files
+*.memory
+*.memorybin
+
+# Exclude Unity Cloud Build
+/[Cc]loud[Bb]uild/
+
+# Exclude Unity Collaborate
+/[Aa]ssets/[Pp]lugins/[Ee]ditor/[Cc]ollaborate*
+
+# Exclude Plastic SCM
+/[Aa]ssets/[Pp]lugins/[Pp]lastic[Ss][Cc][Mm]*
