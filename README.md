@@ -1,12 +1,16 @@
+![icon](https://github.com/bylutass/RastgeleSayilarAR/blob/main/RastgeleSayilarAR/Assets/Images/Icon2.png)
+
 # 🚀 Rastgele Sayılar AR (Augmented Reality) Education for Kids
 
 **Rastgele Sayılar AR** is a demo Augmented Reality (AR) application designed to gamify the learning of numbers for children. This interactive AR project aims to enhance kids' understanding of random number generation and improve their learning experience through immersive AR gameplay. The demo version showcases how AR can turn learning into a fun, engaging adventure.
 
 🌟 **Note**: This is a short demo version to introduce the concept. 
 
+🔔 **Warning**: This program is in Turkish.
+
 ## 🌐 Explore the Project
 For more information and to try the demo, visit the project website:  
-[Visit Project Web Page](<[WEBSITE-LINK](https://bylutass.github.io/RastgeleSayilarAR/index.html)>)
+[Visit Project Web Page](https://bylutass.github.io/RastgeleSayilarAR/index.html)
 
 ## 📋 Key Features
 - **Random Number Generation Games**: Interactive games to help kids learn about numbers through fun AR interactions.
@@ -16,4 +20,4 @@ For more information and to try the demo, visit the project website:
 
 ## 📥 Download the APK
 Try the demo version by downloading the APK for Android:  
-[Download Rastgele Sayılar AR APK](<[APK-LINK](https://drive.google.com/file/d/1yMIr8UEfv0JWJTRrbVtLPpe58IFU1ndW/view)>)
+[Download Rastgele Sayılar AR APK](https://drive.google.com/file/d/1yMIr8UEfv0JWJTRrbVtLPpe58IFU1ndW/view)
