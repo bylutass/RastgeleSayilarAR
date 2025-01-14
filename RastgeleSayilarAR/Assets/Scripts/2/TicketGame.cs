@@ -8,11 +8,13 @@ public class TicketGame : MonoBehaviour
     public TMP_Text[] ticketTMPs; 
     public GameObject[] ticketCubes; 
     public TMP_Text resultText; 
-    public Button showResultsButton;
+    public GameObject infoCube; 
+    public TMP_Text infoText; 
     public Button restartButton;
 
     private int[] enteredNumbers = new int[5];
     private int[,] ticketNumbers = new int[5, 5]; 
+    private int bestTicketIndex = -1;
 
     private void Start()
     {
@@ -22,11 +24,10 @@ public class TicketGame : MonoBehaviour
         inputField.characterValidation = TMP_InputField.CharacterValidation.Integer;
         inputField.onValueChanged.AddListener(ValidateInput);
 
-        showResultsButton.gameObject.SetActive(false);
+        infoCube.SetActive(false);
         restartButton.gameObject.SetActive(false);
         resultText.text = ""; 
 
-        showResultsButton.onClick.AddListener(CalculateScores);
         restartButton.onClick.AddListener(RestartGame);
     }
 
@@ -64,7 +65,7 @@ public class TicketGame : MonoBehaviour
 
         if (input.Length == 5)
         {
-            showResultsButton.gameObject.SetActive(true);
+            CalculateScores();
         }
     }
 
@@ -82,7 +83,6 @@ public class TicketGame : MonoBehaviour
 
         int[] scores = new int[5];
         int maxScore = 0;
-        int bestTicketIndex = -1;
 
         for (int i = 0; i < ticketTMPs.Length; i++)
         {
@@ -106,15 +106,54 @@ public class TicketGame : MonoBehaviour
             ticketCubes[i].GetComponent<Renderer>().material.color = Color.white; 
         }
 
-        if (bestTicketIndex != -1)
+        infoCube.SetActive(true);
+        infoText.text = "En yüksek skorlu bilete dokunun.";
+    }
+
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0)) 
         {
-            ticketCubes[bestTicketIndex].GetComponent<Renderer>().material.color = Color.green;
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out RaycastHit hit))
+            {
+                for (int i = 0; i < ticketCubes.Length; i++)
+                {
+                    if (hit.transform.gameObject == ticketCubes[i])
+                    {
+                        if (i == bestTicketIndex)
+                        {
+                            ticketCubes[i].GetComponent<Renderer>().material.color = Color.green;
+                            infoText.text = $"Bildiniz. Skorlar: {string.Join(", ", CalculateAllScores())}";
+                            restartButton.gameObject.SetActive(true);
+                        }
+                        else
+                        {
+                            ticketCubes[i].GetComponent<Renderer>().material.color = Color.red;
+                            infoText.text = "Bilemediniz tekrar deneyin.";
+                        }
+                    }
+                }
+            }
         }
+    }
 
-        resultText.text = $"Scores: {string.Join(", ", scores)}";
-
-        showResultsButton.gameObject.SetActive(false);
-        restartButton.gameObject.SetActive(true);
+    private int[] CalculateAllScores()
+    {
+        int[] scores = new int[5];
+        for (int i = 0; i < ticketTMPs.Length; i++)
+        {
+            int score = 0;
+            for (int j = 0; j < 5; j++)
+            {
+                if (ticketNumbers[i, j] == enteredNumbers[j])
+                {
+                    score++;
+                }
+            }
+            scores[i] = score;
+        }
+        return scores;
     }
 
     private void RestartGame()
@@ -126,7 +165,7 @@ public class TicketGame : MonoBehaviour
         InitializeTickets();
         resultText.text = ""; 
         restartButton.gameObject.SetActive(false);
-        showResultsButton.gameObject.SetActive(false);
+        infoCube.SetActive(false);
     }
 
     private void MoveCursorToEnd()
