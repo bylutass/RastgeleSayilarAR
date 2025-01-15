@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\acern\\OneDrive\\Desktop\\Unity\\RastgeleSayilarAR\\Assembly-CSharp-Editor.csproj": {}
+    "C:\\RastgeleSayilarAR\\RastgeleSayilarAR\\Assembly-CSharp-Editor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\acern\\OneDrive\\Desktop\\Unity\\RastgeleSayilarAR\\Assembly-CSharp-Editor.csproj": {
+    "C:\\RastgeleSayilarAR\\RastgeleSayilarAR\\Assembly-CSharp-Editor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\acern\\OneDrive\\Desktop\\Unity\\RastgeleSayilarAR\\Assembly-CSharp-Editor.csproj",
+        "projectUniqueName": "C:\\RastgeleSayilarAR\\RastgeleSayilarAR\\Assembly-CSharp-Editor.csproj",
         "projectName": "Assembly-CSharp-Editor",
-        "projectPath": "C:\\Users\\acern\\OneDrive\\Desktop\\Unity\\RastgeleSayilarAR\\Assembly-CSharp-Editor.csproj",
+        "projectPath": "C:\\RastgeleSayilarAR\\RastgeleSayilarAR\\Assembly-CSharp-Editor.csproj",
         "packagesPath": "C:\\Users\\acern\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\acern\\OneDrive\\Desktop\\Unity\\RastgeleSayilarAR\\Temp\\obj\\Debug\\Assembly-CSharp-Editor\\",
+        "outputPath": "C:\\RastgeleSayilarAR\\RastgeleSayilarAR\\Temp\\obj\\Debug\\Assembly-CSharp-Editor\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\acern\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Users\\acern\\OneDrive\\Desktop\\Unity\\RastgeleSayilarAR\\Assembly-CSharp.csproj": {
-                "projectPath": "C:\\Users\\acern\\OneDrive\\Desktop\\Unity\\RastgeleSayilarAR\\Assembly-CSharp.csproj"
+              "C:\\RastgeleSayilarAR\\RastgeleSayilarAR\\Assembly-CSharp.csproj": {
+                "projectPath": "C:\\RastgeleSayilarAR\\RastgeleSayilarAR\\Assembly-CSharp.csproj"
               }
             }
           }
@@ -61,14 +61,14 @@
         }
       }
     },
-    "C:\\Users\\acern\\OneDrive\\Desktop\\Unity\\RastgeleSayilarAR\\Assembly-CSharp.csproj": {
+    "C:\\RastgeleSayilarAR\\RastgeleSayilarAR\\Assembly-CSharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\acern\\OneDrive\\Desktop\\Unity\\RastgeleSayilarAR\\Assembly-CSharp.csproj",
+        "projectUniqueName": "C:\\RastgeleSayilarAR\\RastgeleSayilarAR\\Assembly-CSharp.csproj",
         "projectName": "Assembly-CSharp",
-        "projectPath": "C:\\Users\\acern\\OneDrive\\Desktop\\Unity\\RastgeleSayilarAR\\Assembly-CSharp.csproj",
+        "projectPath": "C:\\RastgeleSayilarAR\\RastgeleSayilarAR\\Assembly-CSharp.csproj",
         "packagesPath": "C:\\Users\\acern\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\acern\\OneDrive\\Desktop\\Unity\\RastgeleSayilarAR\\Temp\\obj\\Debug\\Assembly-CSharp\\",
+        "outputPath": "C:\\RastgeleSayilarAR\\RastgeleSayilarAR\\Temp\\obj\\Debug\\Assembly-CSharp\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\acern\\AppData\\Roaming\\NuGet\\NuGet.Config"

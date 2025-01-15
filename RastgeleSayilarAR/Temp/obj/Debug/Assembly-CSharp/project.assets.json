@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\acern\\OneDrive\\Desktop\\Unity\\RastgeleSayilarAR\\Assembly-CSharp.csproj",
+      "projectUniqueName": "C:\\RastgeleSayilarAR\\RastgeleSayilarAR\\Assembly-CSharp.csproj",
       "projectName": "Assembly-CSharp",
-      "projectPath": "C:\\Users\\acern\\OneDrive\\Desktop\\Unity\\RastgeleSayilarAR\\Assembly-CSharp.csproj",
+      "projectPath": "C:\\RastgeleSayilarAR\\RastgeleSayilarAR\\Assembly-CSharp.csproj",
       "packagesPath": "C:\\Users\\acern\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\acern\\OneDrive\\Desktop\\Unity\\RastgeleSayilarAR\\Temp\\obj\\Debug\\Assembly-CSharp\\",
+      "outputPath": "C:\\RastgeleSayilarAR\\RastgeleSayilarAR\\Temp\\obj\\Debug\\Assembly-CSharp\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\acern\\AppData\\Roaming\\NuGet\\NuGet.Config"
