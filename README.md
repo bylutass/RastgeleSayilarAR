@@ -44,3 +44,8 @@ For more information and to try the demo, visit the project website:
 ## 📥 Download the APK
 Try the demo version by downloading the APK for Android:  
 [Download Rastgele Sayılar AR APK](https://drive.google.com/file/d/1fWN-Lw60KxWheUU5nxca0VY1bEzmy7xI/view)
+
+## Usage
+
+After configuring Vuforia and assigning the image target, arrange the objects on top of the image target. Create an empty game object for each scene and attach the corresponding script files to it. In the Inspector section of the game object, assign the necessary objects to the script files. Assign the click events for the buttons.
+
